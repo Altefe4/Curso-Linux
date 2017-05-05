@@ -1,0 +1,24 @@
+
+# wget
+El comando wget se utiliza para descargar archivos. Soporta http, https y ftp.
+
+Ejemplos:
+
+ 1 - Descargando un archivo cualquiera
+	 wget http://ejemplo.com/programa.tar.gz
+
+ 2 - Descargando uno o varios archivos desde un servidor FTP
+ 	 wget http://ejemplo.com/programa.tar.gz  ftp://otrositio.com/descargas/video.mpg
+
+ 3 - Descargando todos los archivos pdf
+ 	 wget http://ejemplo.com/*.pdf
+
+ 4 - Si la descarga se corto podemos continuar la descarga con el parametro -c
+ 	 wget  -c http://ejemplo.com/archivos.txt
+
+ 5 - Si el sitio requiere autenticación podemos agregar usuario y contraseña
+ 	 wget --http-user=admin --http-password=secreto http://ejemplo.com/archivo.mp3
+
+ 6 - También podemos descargar una página 
+ 	 wget www.antel.com.uy
+
