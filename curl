@@ -1,0 +1,16 @@
+
+#cURL
+
+Con el comando curl también podemos descargar archivos o hacer peticiones HTTP/S. Utiliza la librería libcurl y soporta los protocolos FTP, FTPS, HTTP, HTTPS, TFTP, SCP, SFTP, Telnet, DICT, FILE y LDAP, etc. También soporta certificados para HTTPS, HTTP POST, HTTP PUT o peticiones REST. El principal proposito es automatizar transferencias de archivos.
+
+# Ejemplos
+	
+ 	1 - Lectura simple de una página web:
+		curl www.antel.com.uy
+	2 - Lectura de una página web segura
+		curl https://www.antel.com.uy
+	3 - Guardamos una página web en un fichero
+		curl -o index.html www.antel.com.uy
+	4 - Si la página nos redirige debemos usar el parámetro -L
+		curl -L https://www.google.com 	
+
